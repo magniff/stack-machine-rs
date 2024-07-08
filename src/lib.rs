@@ -124,8 +124,6 @@ where
 mod tests {
     use super::*;
 
-    type Program = Instructions<NOOP, PUSH<Zero>, PUSH<One>, NOOP, NOOP, NOOP, NOOP, NOOP>;
-
     #[test]
     fn test_basic() {
         let vm: VMState<
